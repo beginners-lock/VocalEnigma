@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VocalEnigma</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="mobile.css">
+	<link rel="stylesheet" type="text/css" href="tablet.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<div id="pagecont">
+		<div id="togglediv" onclick="toggle();">
+			<div id="toggleinner">
+				<img id="suntoggle" src="res/sun.png">
+				<img id="moontoggle" src="res/moon.png">
+				<div id="togglecircle"></div>
+			</div>
+		</div>
+		<div id="homepage">
+			<div id="homeleft">
+				<div id="hllarge">
+					Convert Text to Speech in a Click
+				</div>
+				<div id="hlsmall">
+					This site uses the <div id="apitext">ResponsiveVoice API</div> to convert text to audio. With various voices to choose from, join us test the limits of this API.
+				</div>
+				<div id="hlbtn" onclick="speak();">
+					Test
+				</div>
+			</div>
+			<div id="homeright">
+				<div id="tadiv">
+					<textarea id="textarea"></textarea>
+				</div>
+			</div>
+			<div id="circle1" class="vecircle"></div>
+			<div id="circle2" class="vecircle"></div>
+			<div id="circle3" class="vecircle"></div>
+		</div>
+		<div id="navbar">
+			<div id="sitename">
+				VocalEnigma
+				<img id="logo" src="res/wave-sound.png">
+			</div>
+		</div>
+	</div>
+	<script src="https://code.responsivevoice.org/responsivevoice.js?key=MnK5OJxL"></script>
+</body>
+</html>

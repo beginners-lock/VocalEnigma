@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'FiraSans Regular';
+    src: url(fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'FiraSans Bold';
+    src: url(fonts/FiraSans-Bold.ttf);
+}
+
+body{
+	position:relative;
+	margin:auto; box-sizing:border-box;
+	width:100vw; height:auto; padding-top:0px;
+	display:flex; flex-direction:column; align-items:center;
+	justify-content:flex-start; overflow-x:hidden;
+	font-family:FiraSans Regular;
+}
+
+#togglediv:hover{ cursor:pointer; }
+
+
+/*laptops*/
+@media only screen and (min-width:1024px){
+	#pagecont{
+		position:relative;
+		margin:0px; box-sizing:border-box;
+		width:100vw; min-height:100vh; max-height:100vh;
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-start;
+		align-items:center;   
+		overflow-y:hidden;
+		overflow-x:hidden;
+		transition-duration:0.5s;
+		background-color:black;
+	}
+
+	#togglediv{
+		position:absolute; top:20px; width:130px; height:50px; border-radius:50px; z-index:5;
+		background-color:rgba(200, 200, 200, 0.2); box-sizing:border-box; transition-duration:0.25s;
+	}
+
+	#toggleinner{
+		width:100%; height:100%; border-radius:50px; display:flex; flex-direction:row; justify-content:space-between;
+		align-items:center; position:relative; box-sizing:border-box; transition-duration:0.25s;
+	}
+
+	#togglecircle{
+		position:absolute; border-radius:50%; width:40px; height:40px; margin:0px 5px; transition-duration:0.25s;
+		left:80px; transition-duration:0.5s; box-sizing:border-box; background-color:rgba(200, 200, 200, 0.4);
+	}
+
+	#suntoggle, #moontoggle{
+		width:30px; height:30px; border-radius:50%; margin:0px 10px; box-sizing:border-box;
+	}
+
+	#navbar{
+		top:0px; left:0px; background-color:white;
+		position:fixed; display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+		padding:20px 50px; box-sizing:border-box; width:100%;	background-color:black;
+	}
+
+	#sitename{
+		font-family:'FiraSans Bold'; font-size:35px; color:#169232;
+		display:flex; flex-direction:row; align-items:center; justify-content:flex-start;
+	}
+
+	#logo{ width:40px; height:40px; margin-left:10px; }
+
+	#homepage{
+		display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+		padding:120px 50px 50px 50px; width:100%; height:100vh; box-sizing:border-box;
+	}
+
+	#homeleft{
+		display:flex; flex-direction:column; align-items:flex-start; justify-content:center;
+		width:45%; height:100%; z-index:2;
+	}
+
+	#hllarge{
+		font-family:'FiraSans Bold'; font-size:54px; color:white; margin-bottom:10px; width:450px; transition-duration:0.25s;
+	}
+
+	#hlsmall{
+		font-family:'FiraSans Regular'; font-size:24px; color:white; text-align:left; margin-bottom:30px; transition-duration:0.25s;
+		display:flex; flex-direction:row; justify-content:flex-start; align-items:flex-start; flex-wrap:wrap;
+	}
+
+	#apitext{ 
+		width:auto; margin:0px 5px; box-sizing:border-box; font-size:24px;
+		color:rgb(180, 30, 30); font-weight:bold; font-family:'FiraSans Bold';
+	}
+
+	#hlbtn{
+		font-family:'FiraSans Bold';  padding:15px 30px; border-radius:40px;  font-size:24px; font-weight:bold;
+		background-color:#169232; color:white;
+	}
+
+	#hlbtn:hover{ cursor:pointer; }
+
+	#homeright{
+		width:45%; z-index:2; height:70vh;
+		display:flex; flex-direction:row; align-items:center; justify-content:center; 
+	}
+
+	#textarea{
+		width:450px; height:400px; box-sizing:border-box; padding:20px; border-radius:20px; color:white;
+		font-family:'FiraSans Regular'; font-size:18px; background-color:rgba(180, 180, 180, 0.3);
+	}
+
+	#textarea:focus{ outline:none }
+
+	.vecircle{ position:absolute; border-radius:50%; background-color:#16923275; z-index:1; }
+
+	#circle1{
+		width:300px; height:300px; top:2%; left:80%;
+	}
+
+	#circle2{
+		width:200px; height:200px; top:75%; left:40%; 
+	}
+
+	#circle3{
+		width:100px; height:100px; top:15%; left:5%;
+	}
+}
+
+body{
+	background-color:white;
+	color:#169232;
+}
+

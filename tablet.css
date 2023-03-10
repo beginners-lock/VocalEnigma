@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'FiraSans Regular';
+    src: url(fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'FiraSans Bold';
+    src: url(fonts/FiraSans-Bold.ttf);
+}
+
+body{
+	position:relative;
+	margin:auto; box-sizing:border-box;
+	width:100vw; height:auto; padding-top:0px;
+	display:flex; flex-direction:column; align-items:center;
+	justify-content:flex-start; overflow-x:none;
+	font-family:FiraSans Regular;
+}
+
+
+/*tablet*/
+@media only screen and (min-width:768px) and (max-width:1023px){
+	#pagecont{
+		position:relative;
+		margin:0px; box-sizing:border-box;
+		width:100vw; min-height:100vh; max-height:100vh;
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-start;
+		align-items:center;   
+		overflow-y:hidden;
+		overflow-x:hidden;
+		transition-duration:0.5s;
+		background-color:black;
+	}
+
+	#togglediv{
+		position:absolute; top:20px; width:200px; height:80px; border-radius:100px; z-index:5;
+		background-color:rgba(200, 200, 200, 0.4); box-sizing:border-box; right:20px;
+	}
+
+	#toggleinner{
+		width:100%; height:100%; border-radius:100px; display:flex; flex-direction:row; justify-content:space-between;
+		align-items:center; position:relative; box-sizing:border-box;
+	}
+
+	#togglecircle{
+		position:absolute; border-radius:50%; width:64px; height:64px; margin:0px 8px;
+		left:120px; transition-duration:0.5s; box-sizing:border-box; background-color:rgba(200, 200, 200, 0.2);
+	}
+
+	#suntoggle, #moontoggle{
+		width:45px; height:45px; border-radius:50%; margin:0px 17.5px; box-sizing:border-box;
+	}
+
+	#navbar{
+		width:100vw; height:100px; position:fixed; top:0px; left:0px; padding:0px 35px; box-sizing:border-box;
+		display:flex; flex-direction:row; justify-content:space-between; align-items:center; background-color:white;
+		background-color:black;
+	}
+
+	#sitename{
+		font-size:38px; font-family:'FiraSans Bold'; color:#169232;
+		display:flex; flex-direction:row; align-items:center; justify-content:flex-start;
+	}
+
+	#logo{ width:45px; height:45px; margin-left:10px; }
+
+	#homepage{
+		display:flex; flex-direction:column; justify-content:center; align-items:center;
+		padding:110px 20px 50px 20px; width:100%; height:100vh; box-sizing:border-box;
+	}
+
+	#homeleft{
+		display:flex; flex-direction:column; align-items:center; justify-content:center;
+		width:100%; height:35vh; z-index:2; 
+	}
+
+	#hllarge{
+		font-family:'FiraSans Bold'; font-size:42px; color:white; margin-bottom:15px; text-align:center; width:350px;
+	}
+
+	#hlsmall{
+		font-family:'FiraSans Regular'; font-size:32px; color:white; text-align:center; margin-bottom:25px;
+		display:flex; flex-direction:row; justify-content:flex-start; align-items:flex-start; flex-wrap:wrap;
+		padding:0px 5px; box-sizing:border-box; width:570px;
+	}
+
+	#apitext{ 
+		width:auto; margin:0px 0px 0px 5px; box-sizing:border-box; font-size:32px;
+		color:rgb(180, 30, 30); font-weight:bold; font-family:'FiraSans Bold';
+	}
+
+	#hlbtn{
+		font-family:'FiraSans Bold';  padding:20px 40px; border-radius:40px;  font-size:34px; font-weight:bold;
+		background-color:#169232; color:white;
+	}
+
+	#hlbtn:hover{ cursor:pointer; }
+
+	#homeright{
+		width:100%; z-index:2; height:40vh; margin-top:15px;
+		display:flex; flex-direction:row; align-items:center; justify-content:center; 
+	}
+
+	#textarea{
+		width:550px; height:350px; box-sizing:border-box; padding:20px; border-radius:20px; color:white;
+		font-family:'FiraSans Regular'; font-size:32px; background-color:rgba(180, 180, 180, 0.3);
+	}
+
+	#textarea:focus{ outline:none }
+
+	.vecircle{ position:absolute; border-radius:50%; background-color:#16923275; z-index:1; }
+
+	#circle1{
+		width:300px; height:300px; top:10%; left:80%;
+	}
+
+	#circle2{
+		width:200px; height:200px; top:85%; left:35%; 
+	}
+
+	#circle3{
+		width:100px; height:100px; top:15%; left:-5%;
+	}
+}
