@@ -11,8 +11,16 @@ window.addEventListener('load', function(){
 		toggle();
 	}
 
-	let opening = 'Welcome to VocalEnigma. One of the portfolio sites of beginners lock which makes use of ResponsiveVoice API. Type something in, then test and I\'ll do the rest'
-	responsiveVoice.speak(opening, 'UK English Female')
+	document.getElementById('me').addEventListener('mouseover', function(){
+		document.getElementById('mydiv').style.width = '100%';
+	});
+
+	document.getElementById('me').addEventListener('mouseleave', function(){
+		document.getElementById('mydiv').style.width = '0px';
+	});
+
+	//let opening = 'Welcome to VocalEnigma. One of the portfolio sites of beginners lock which makes use of ResponsiveVoice API. Type something in, then test and I\'ll do the rest'
+	//responsiveVoice.speak(opening, 'UK English Female')
 });
 
 function toggle(){
@@ -60,6 +68,8 @@ function theme(type){
 		document.getElementById('textarea').style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
 		document.getElementById('togglecircle').style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
 		document.getElementById('togglediv').style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+		document.getElementById('me').style.color = 'black';
+		document.getElementById('mydiv').style.backgroundColor = 'black';
 	}else{
 		document.getElementById('pagecont').style.backgroundColor = 'black';
 		document.getElementById('navbar').style.backgroundColor = 'black';
@@ -69,6 +79,8 @@ function theme(type){
 		document.getElementById('textarea').style.backgroundColor = 'rgba(180, 180, 180, 0.3)';
 		document.getElementById('togglecircle').style.backgroundColor = 'rgba(200, 200, 200, 0.4)';
 		document.getElementById('togglediv').style.backgroundColor = 'rgba(200, 200, 200, 0.2)';
+		document.getElementById('me').style.color = 'white';
+		document.getElementById('mydiv').style.backgroundColor = 'white';
 	}
 }
 
@@ -84,4 +96,8 @@ function speak(){
 			responsiveVoice.speak("Type something in first dammit. Gaawwwwd I hate this job!!!", 'UK English Female', {volume:10});
 		}
 	}
+}
+
+function mypage(){
+	window.open('https://github.com/beginners-lock', '_blank');
 }

@@ -20,6 +20,14 @@ body{
 
 /*mobile*/
 @media only screen and (max-width:500px){
+	#me{
+		display:none;
+	}
+
+	#github{
+		width:45px; height:45px; border-radius:50%; position:absolute; top:20px; z-index:5; left:50%; background-color:white;
+	}
+
 	#pagecont{
 		position:relative;
 		margin:0px; box-sizing:border-box;
