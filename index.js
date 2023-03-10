@@ -19,8 +19,8 @@ window.addEventListener('load', function(){
 		document.getElementById('mydiv').style.width = '0px';
 	});
 
-	//let opening = 'Welcome to VocalEnigma. One of the portfolio sites of beginners lock which makes use of ResponsiveVoice API. Type something in, then test and I\'ll do the rest'
-	//responsiveVoice.speak(opening, 'UK English Female')
+	let opening = 'Welcome to VocalEnigma. One of the portfolio sites of beginners lock which makes use of ResponsiveVoice API. Type something in, then test and I\'ll do the rest'
+	responsiveVoice.speak(opening, 'UK English Female')
 });
 
 function toggle(){
