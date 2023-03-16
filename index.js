@@ -11,12 +11,12 @@ window.addEventListener('load', function(){
 	}*/
 
 	if(window.innerWidth>=768 || window.innerWidth<=1023){
-		document.getElementById('homeleft').style.minHeight = 0.40*height;
-		document.getElementById('homeleft').style.maxHeight = 0.40*height;
-		document.getElementById('homeright').style.minHeight = 0.38*height;
-		document.getElementById('homeright').style.maxHeight = 0.38*height;
+		document.getElementById('homeleft').style.minHeight = (0.38*height).toString()+'px';
+		document.getElementById('homeleft').style.maxHeight = (0.38*height).toString()+'px';
+		document.getElementById('homeright').style.minHeight = (0.38*height).toString()+'px';
+		document.getElementById('homeright').style.maxHeight = (0.38*height).toString()+'px';
 	}
-	
+
 	let datetime = new Date();
 	let time = datetime.toString().split(' ')[4];
 	let hour = time.toString().split(':')[0]
