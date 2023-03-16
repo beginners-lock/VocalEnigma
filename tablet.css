@@ -25,7 +25,7 @@ body{
 	}
 
 	#github{
-		width:65px; height:65px; border-radius:50%; position:absolute; top:20px; z-index:5; background-color:white;
+		width:55px; height:55px; border-radius:50%; position:absolute; top:20px; z-index:5; background-color:white;
 		left:48%;
 	}
 
@@ -44,7 +44,7 @@ body{
 	}
 
 	#togglediv{
-		position:absolute; top:20px; width:200px; height:80px; border-radius:100px; z-index:5;
+		position:absolute; top:20px; width:170px; height:65px; border-radius:100px; z-index:5;
 		background-color:rgba(200, 200, 200, 0.4); box-sizing:border-box; right:20px;
 	}
 
@@ -54,12 +54,12 @@ body{
 	}
 
 	#togglecircle{
-		position:absolute; border-radius:50%; width:64px; height:64px; margin:0px 8px;
+		position:absolute; border-radius:50%; width:55px; height:55px; margin:0px 5px;
 		left:120px; transition-duration:0.5s; box-sizing:border-box; background-color:rgba(200, 200, 200, 0.2);
 	}
 
 	#suntoggle, #moontoggle{
-		width:45px; height:45px; border-radius:50%; margin:0px 17.5px; box-sizing:border-box;
+		width:40px; height:40px; border-radius:50%; margin:0px 12.5px; box-sizing:border-box;
 	}
 
 	#navbar{

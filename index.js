@@ -54,7 +54,7 @@ function toggle(){
 	//Tablet
 	if(window.innerWidth>=768 && window.innerWidth<=1023){
 		if(document.getElementById('togglecircle').style.left=='0px'){
-			document.getElementById('togglecircle').style.left = '120px';
+			document.getElementById('togglecircle').style.left = '105px';
 			theme('dark');
 		}else{
 			document.getElementById('togglecircle').style.left = '0px';
