@@ -82,7 +82,7 @@ body{
 
 	#homeleft{
 		display:flex; flex-direction:column; align-items:center; justify-content:center;
-		width:100%; height:35vh; z-index:2; box-sizing:border-box; border:1px red solid;
+		width:100%; height:35vh; z-index:2; box-sizing:border-box; border:1px blue solid;
 	}
 
 	#hllarge{
