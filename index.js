@@ -3,14 +3,14 @@ let err = 2;
 window.addEventListener('load', function(){
 	//Get and set heights
 	let height = window.innerHeight;
-	/*if(window.innerWidth<=500){
-		document.getElementById('homeleft').style.minHeight = 0.40*height;
-		document.getElementById('homeleft').style.maxHeight = 0.40*height;
-		document.getElementById('homeright').style.minHeight = 0.38*height;
-		document.getElementById('homeright').style.maxHeight = 0.38*height;
-	}*/
+	if(window.innerWidth<=500){
+		//document.getElementById('homeleft').style.minHeight = 0.30*height;
+		//document.getElementById('homeleft').style.maxHeight = 0.30*height;
+		//document.getElementById('homeright').style.minHeight = 0.38*height;
+		//document.getElementById('homeright').style.maxHeight = 0.38*height;
+	}
 
-	if(window.innerWidth>=768 || window.innerWidth<=1023){
+	if(window.innerWidth>=768 && window.innerWidth<=1023){
 		document.getElementById('homeleft').style.minHeight = (0.38*height).toString()+'px';
 		document.getElementById('homeleft').style.maxHeight = (0.38*height).toString()+'px';
 		document.getElementById('homeright').style.minHeight = (0.38*height).toString()+'px';
