@@ -65,7 +65,7 @@ function toggle(){
 	//Mobile
 	if(window.innerWidth<=500){
 		if(document.getElementById('togglecircle').style.left=='0px'){
-			document.getElementById('togglecircle').style.left = '80px';
+			document.getElementById('togglecircle').style.left = '50px';
 			theme('dark');
 		}else{
 			document.getElementById('togglecircle').style.left = '0px';
