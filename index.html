@@ -31,18 +31,65 @@
 				<div id="hlsmall">
 					This site uses the <div id="apitext">ResponsiveVoice API</div> to convert text to audio. With various voices to choose from, join us test the limits of this API.
 				</div>
-				<div id="hlbtn" onclick="speak();">
-					Test
-				</div>
+				<img id="settings" src="res/settings.png" onclick="docker();" />
 			</div>
 			<div id="homeright">
 				<div id="tadiv">
 					<textarea id="textarea"></textarea>
 				</div>
+
+				<div id="micdiv">
+					<div id="wave1"></div>
+					<div id="wave2"></div>
+					<div id="wave3"></div>
+					<img id="mic" src="res/microphonedark.png">
+				</div>
 			</div>
 			<div id="circle1" class="vecircle"></div>
 			<div id="circle2" class="vecircle"></div>
 			<div id="circle3" class="vecircle"></div>
+		</div>
+		<div id="settingspane">
+			<div id="settingsheader">Vocal Settings<img id="close" src="res/close.png" onclick="docker();"></div>
+			<div id="settingsbody">
+			<div class="settingssection">
+				<div class="settingslabel">Volume</div>
+				<input type="range" id="volumerange" class="slider" name="volumerange" min="0" max="10" step="1" list="markers" value="5" onchange="setvocal(this, 'volume');">
+			</div>
+			<div class="settingssection">
+				<div class="settingslabel">Pitch</div>
+				<input type="range" id="pitchrange" class="slider" name="pitchrange" min="0" max="10" step="1" list="markers" value="5" onchange="setvocal(this, 'pitch');">
+			</div>
+			<div class="settingssection">
+				<div class="settingslabel">Rate</div>
+				<input type="range" id="raterange" class="slider" name="raterange" min="0" max="10" step="1" list="markers" value="7" onchange="setvocal(this, 'rate');">
+			</div>
+			<div class="settingssection">
+				<div class="settingslabel">Gender</div>
+				<div class="labeldiv"><input class="radio" type="radio" name="gender" onclick="setgender(this);"><label class="rlabel">Male</label></div>
+				<div class="labeldiv"><input class="radio" type="radio" name="gender" onclick="setgender(this);" checked><label class="rlabel">Female</label></div>
+			</div>
+			<div class="settingssection">
+				<div class="settingslabel">Accent</div>
+				<div class="labeldiv"><input class="radio" type="radio" name="accent" checked onclick="setaccent(this);"><label class="rlabel">UK English</label></div>
+				<div class="labeldiv"><input class="radio" type="radio" name="accent" onclick="setaccent(this);"><label class="rlabel">US English</label></div>
+				<div class="labeldiv"><input class="radio" type="radio" name="accent" onclick="setaccent(this);"><label class="rlabel">French</label></div>
+				<div class="labeldiv"><input class="radio" type="radio" name="accent" onclick="setaccent(this);"><label class="rlabel">Italian</label></div>
+			</div>
+			<datalist id="markers">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</datalist>
+			</div>
 		</div>
 		<div id="navbar">
 			<div id="sitename">
